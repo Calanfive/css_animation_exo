@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  margin: 5%;
+  margin: 0%;
   padding: 0;
 }
 
@@ -18,7 +18,7 @@ html, body {
 }
 
 @keyframes turn {
-  100% {transform: rotate(360deg)}
+  100% {transform: rotate(360deg);}
 }
 
 .spinner {
@@ -29,5 +29,32 @@ html, body {
   animation: turn infinite linear 2s ;
 }
 
+.love {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color:ghostwhite;
+  animation: change-color infinite linear 4s;
+}
 
+.love:hover {
+  animation: turn 1 5s;
+}
+
+@keyframes scale-method {
+  100% {transform: scale(2.2);}
+}
+
+@keyframes change-color {
+  0% {color: rgb(128, 24, 24);}
+
+  50% {color: rgb(39, 39, 127);}
+
+  100% {color: rgb(128, 24, 24);}
+}
 
