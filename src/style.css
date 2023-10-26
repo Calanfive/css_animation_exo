@@ -58,3 +58,29 @@ body {
   100% {color: rgb(128, 24, 24);}
 }
 
+.heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+}
+
+.heart__left, .heart__right {
+  position: absolute;
+  width: 50px;
+  height: 80%;
+  background-color: rgb(208, 55, 55);
+  border-radius: 50% 50% 0 0;
+}
+
+.heart__left {
+  top: 0;
+  left: 42px;
+  transform: rotate(45deg);
+}
+
+.heart__right {
+  top: 0;
+  left: 24px;
+  transform: rotate(-45deg);
+}
+
