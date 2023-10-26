@@ -8,6 +8,12 @@ html, body {
   height: 100%;
 }
 
+body {
+  background-color: rgb(23, 20, 20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .box {
   height: 50px;
   width: 50px;
@@ -26,24 +32,18 @@ html, body {
   width: 50px;
   background-image: url(https://www.pngall.com/wp-content/uploads/14/Loading-PNG-Image-File.png);
   background-size: cover;
-  animation: turn infinite linear 2s ;
+  animation: turn infinite linear 2s;
 }
 
 .love {
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 100px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color:ghostwhite;
-  animation: change-color infinite linear 4s;
+  animation: change-color infinite linear 4s,turn infinite linear 2s;
 }
 
-.love:hover {
-  animation: turn 1 5s;
+.box_du_love:hover {
+  animation: scale-method 1 5s;
 }
 
 @keyframes scale-method {
